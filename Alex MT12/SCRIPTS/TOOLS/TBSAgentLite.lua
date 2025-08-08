@@ -1,8 +1,8 @@
--------------------------------------------------------------------------------
--- TBS Agent Lite 0.98
--- release date: 2024-01
+--------------------------------------------------------------------------------
+-- TBS Agent Lite 0.95
+-- release date: 2021-11
 -- author: JimB40
--------------------------------------------------------------------------------
-local toolName = "TNS|TBS Agent 0.98|TNE"
+--------------------------------------------------------------------------------
+local toolName = "TNS|TBS Agent Lite|TNE"
 local SP = '/SCRIPTS/TOOLS/TBSAGENTLITE/'
-return {run=(loadScript(SP..'loader','Tx')('SA',SP)).run}
+return {run=(loadScript(SP..'loader','Tx')(SP)).run}
