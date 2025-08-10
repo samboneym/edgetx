@@ -1,0 +1,14 @@
+{
+    "Lua.diagnostics.globals": [
+        "getFieldInfo",
+        "getValue",
+        "getTime",
+        "lcd",
+        "SMLSIZE",
+        "INVERS",
+        "SOLID",
+        "RIGHT",
+        "EVT_EXIT_BREAK"
+    ],
+    "Lua.runtime.version": "Lua 5.2"
+}

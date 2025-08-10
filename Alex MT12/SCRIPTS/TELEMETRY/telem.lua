@@ -144,8 +144,63 @@ local function drawBattery(x, y)
     lcd.drawText(batteryX + batteryWidth + 3, batteryY + 6, string.format("%.1fV", script.battery.voltage), SMLSIZE)
 
     -- Cell count (below voltage)
-    lcd.drawText(batteryX + batteryWidth + 3, batteryY + 14, string.format("(%dS)", script.battery.cellCount),
-        INVERS + SMLSIZE)
+    lcd.drawText(batteryX + batteryWidth + 3, batteryY + 14, string.format("(%dS)", script.battery.cellCount), SMLSIZE)
+end
+
+-- Draw a wifi-style signal strength symbol for Link Quality (LQ) using arcs and a dot
+local function drawLQ(x, y, lq)
+    -- lq: 0-100
+    -- Number of arcs to fill (0-3), dot is always drawn
+    local arcs = 0
+    if lq >= 80 then
+        arcs = 3
+    elseif lq >= 50 then
+        arcs = 2
+    elseif lq >= 20 then
+        arcs = 1
+    else
+        arcs = 0
+    end
+
+    local width = 21
+    local height = 21
+
+    local centerX = x + math.floor(width / 2)
+
+    local xOff = math.floor(3 / 2)
+    lcd.drawFilledRectangle(centerX - xOff, y + height - 3, 3, 3)
+
+    local xOff = math.floor(9 / 2)
+    lcd.drawFilledRectangle(centerX - xOff, y + height - 9, 9, 3)
+
+    local xOff = math.floor(15 / 2)
+    lcd.drawFilledRectangle(centerX - xOff, y + height - 15, 15, 3)
+
+    local xOff = math.floor(21 / 2)
+    lcd.drawFilledRectangle(centerX - xOff, y + height - 21, 21, 3)
+
+    -- Draw arcs (simulate with lines for EdgeTX LCD)
+    -- local centerX = x + 8
+    -- local centerY = y + 10
+    -- local arcRadii = { 3, 6, 9 }
+    -- local currentY = centerY
+
+    -- for i = 1, 3 do
+    --     if arcs >= i then
+    --         -- Draw filled arc (simulate with lines)
+    --         lcd.drawFilledRectangle(centerX - arcRadii[i], currentY, arcRadii[i] * 2, 3)
+
+    --         -- lcd.drawLine(centerX - arcRadii[i], currentY, centerX + arcRadii[i], currentY, SOLID, 0)
+    --         -- lcd.drawLine(centerX - arcRadii[i], currentY + 1, centerX + arcRadii[i], currentY + 1, SOLID, 0)
+    --     else
+    --         -- Optionally, draw faint/empty arc (skip for clarity)
+    --     end
+    --     currentY = currentY - 5
+    -- end
+
+
+    -- -- Draw dot (always present)
+    -- lcd.drawFilledRectangle(centerX, centerY + 5, 3, 3)
 end
 
 local function drawRFMode(x, y)
@@ -202,25 +257,27 @@ local function run(event)
 
     yPos = yPos + 14
 
+
     -- Display Link Quality (LQ)
-    --[[
-  lcd.drawText(xLabel, yPos, "LQ:")
-  if script.link.lq ~= 0 then
-    lcd.drawText(xValue, yPos, string.format("%d%%", script.link.lq), RIGHT)
-  else
-    lcd.drawText(xValue, yPos, "N/A", RIGHT)
-  end
+    lcd.drawText(xLabel, yPos, "LQ:")
+    if script.link.lq ~= 0 then
+        lcd.drawText(xValue, yPos, string.format("%d%%", script.link.lq), RIGHT)
+        -- Draw wifi-style LQ symbol to the right of the value
+        drawLQ(xValue + 10, yPos, script.link.lq)
+    else
+        lcd.drawText(xValue, yPos, "N/A", RIGHT)
+        drawLQ(xValue + 10, yPos, 0)
+    end
 
-  yPos = yPos + 14
+    yPos = yPos + 14
 
-  -- Display RSSI
-  lcd.drawText(xLabel, yPos, "RSSI:")
-  if script.link.rssi ~= 0 then
-    lcd.drawText(xValue, yPos, string.format("%ddB", script.link.rssi), RIGHT)
-  else
-    lcd.drawText(xValue, yPos, "N/A", RIGHT)
-  end
-  --]]
+    -- Display RSSI
+    lcd.drawText(xLabel, yPos, "RSSI:")
+    if script.link.rssi ~= 0 then
+        lcd.drawText(xValue, yPos, string.format("%ddB", script.link.rssi), RIGHT)
+    else
+        lcd.drawText(xValue, yPos, "N/A", RIGHT)
+    end
 
     -- Draw battery icon and percentage at bottom left
     if script.battery.voltage ~= 0 then
