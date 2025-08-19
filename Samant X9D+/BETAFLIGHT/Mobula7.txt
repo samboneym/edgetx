@@ -25,6 +25,7 @@ vtxtable powerlevels 1
 vtxtable powerlabels 25
 set gyro_sync_denom = 4
 set acc_calibration = -178,-45,261
+set dshot_idle_value = 1000
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
@@ -54,9 +55,9 @@ set osd_stat_max_spd = OFF
 set osd_stat_endbatt = ON
 set osd_stat_max_g_force = ON
 set vtx_band = 5
-set vtx_channel = 5
+set vtx_channel = 8
 set vtx_power = 1
-set vtx_freq = 5806
+set vtx_freq = 5917
 set vcd_video_system = NTSC
 set frsky_spi_tx_id = 154,46
 set frsky_spi_offset = -72
