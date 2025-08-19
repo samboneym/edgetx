@@ -68,6 +68,11 @@ set name = Mobula7
 
 profile 0
 set vbat_pid_gain = ON
+set crash_dthreshold = 80
+set crash_gthreshold = 600
+set crash_setpoint_threshold = 500
+set crash_recovery_rate = 150
+set crash_recovery = ON
 set throttle_boost = 8
 set angle_level_strength = 90
 set level_limit = 60
