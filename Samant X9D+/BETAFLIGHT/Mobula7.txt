@@ -5,6 +5,7 @@ defaults nosave
 mcu_id 0021003a5734571720303634
 
 # name: Mobula7
+feature -AIRMODE
 beeper -BAT_LOW
 beeper -SYSTEM_INIT
 beeper -ON_USB
@@ -66,6 +67,10 @@ set frsky_x_rx_num = 1
 set name = Mobula7
 
 profile 0
+set vbat_pid_gain = ON
+set throttle_boost = 8
+set angle_level_strength = 90
+set level_limit = 60
 
 profile 1
 
@@ -73,6 +78,8 @@ profile 2
 profile 0
 
 rateprofile 0
+set throttle_limit_type = SCALE
+set throttle_limit_percent = 70
 
 rateprofile 1
 
