@@ -1,0 +1,83 @@
+# diff all
+# Betaflight / CRAZYBEEF3FR (CBFR) 4.1.1 Oct 26 2019 / 12:14:35 (83ac98cfb) MSP API: 1.42 / FEATURE CUT LEVEL 2
+batch start
+defaults nosave
+mcu_id 0021003a5734571720303634
+
+# name: Mobula7
+feature -AIRMODE
+beeper -BAT_LOW
+beeper -SYSTEM_INIT
+beeper -ON_USB
+serial 2 2048 115200 57600 0 115200
+aux 0 0 5 1700 2100 0 0
+aux 1 1 4 900 1300 0 0
+aux 2 2 4 1300 1700 0 0
+aux 3 13 6 1700 2100 0 0
+aux 4 36 7 1700 2100 0 0
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 1
+vtxtable powerlabels 25
+set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 435
+set vbat_min_cell_voltage = 300
+set vbat_warning_cell_voltage = 330
+set vbat_duration_for_warning = 50
+set vbat_duration_for_critical = 20
+set ibata_scale = 1175
+set osd_warn_esc_fail = OFF
+set osd_vbat_pos = 2072
+set osd_rssi_pos = 2048
+set osd_tim_1_pos = 54
+set osd_tim_2_pos = 2104
+set osd_flymode_pos = 2458
+set osd_g_force_pos = 2445
+set osd_throttle_pos = 2426
+set osd_vtx_channel_pos = 2080
+set osd_crosshairs_pos = 2253
+set osd_current_pos = 2400
+set osd_mah_drawn_pos = 2434
+set osd_craft_name_pos = 2059
+set osd_warnings_pos = 329
+set osd_disarmed_pos = 2346
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_max_g_force = ON
+set vtx_band = 5
+set vtx_channel = 8
+set vtx_power = 1
+set vtx_freq = 5917
+set vcd_video_system = NTSC
+set frsky_spi_tx_id = 154,46
+set frsky_spi_offset = -72
+set frsky_spi_bind_hop_data = 0,85,170,20,105,190,40,125,210,60,145,230,80,165,15,100,185,35,120,205,55,140,225,75,160,10,95,180,30,115,200,50,135,222,70,155,5,92,175,25,110,195,45,130,215,65,150,0,0,0
+set frsky_x_rx_num = 1
+set name = Mobula7
+
+profile 0
+
+profile 1
+
+profile 2
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+rateprofile 0
+save
+# 
