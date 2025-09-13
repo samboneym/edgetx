@@ -1,0 +1,12 @@
+
+Self judgment on whether charging is normal:
+
+1. When the system is turned on, insert the USB charging head into the charging port at the bottom of the remote control, and observe that a charging icon will appear next to the battery icon in the upper right corner of the screen.
+
+2. Note 1: If this icon does not appear, it indicates that the charger is inserted abnormally. You can try replacing the charger.
+
+3. Note 2: If it flashes, it indicates abnormal charging, and you may need to try a different charger. Note that if this condition occurs, you may need to try a different type of charger. Currently, it has been found that some chargers do not fit well. If none of them work, you need to contact our Wangwang assistant for assistance, and we will definitely solve the problem for you in the end.
+
+4. Press the TELE button to enter the sensor menu, and pay attention to the Charge Current value that should be displayed in the fourth item. It should be greater than 0.5A, and the maximum charging power is about 10W.
+
+5.Note: The charger only supports 5V/1A/2A

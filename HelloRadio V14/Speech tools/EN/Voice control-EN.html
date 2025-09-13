@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Voice control-EN</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #content-info{
+            width: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #author-info{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        #title{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding-top: 10px;
+            margin-bottom: 2px;
+            font-size: 34px;
+            color: #505050;
+        }
+        .text{
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            margin-right: 20px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: #8c8c8c;
+        }
+        #navBar{
+            width: auto;
+            height: auto;
+            position: fixed;
+            right:0;
+            bottom: 0;
+            background-color: #f0f3f4;
+            overflow-y: auto;
+            text-align: center;
+        }
+        #svg-container{
+            width: 100%;
+            overflow-x: scroll;
+            min-width: 0px;
+            margin: 0 10px;
+            overflow: visible;
+            position: relative;
+        }
+        #nav-thumbs{
+            overflow-y: scroll;
+            padding: 0 5px;
+        }
+        .nav-thumb{
+            position: relative;
+            margin: 10px auto;
+        }
+        .nav-thumb >p{
+            text-align: center;
+            font-size: 12px;
+            margin: 4px 0 0 0;
+        }
+        .nav-thumb >div{
+            position: relative;
+            display: inline-block;
+            border: 1px solid #c6cfd5;
+        }
+        .nav-thumb img{
+            display: block;
+        }
+        #main-content{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #d0cfd8;
+            display: flex;
+            height: auto;
+            flex-flow: row wrap;
+            text-align:center;
+        }
+        #svg-container >svg{
+            overflow: visible;
+            display: block;
+            margin:5px auto;
+            margin-bottom: 5px;
+        }
+        #copyright{
+            bottom: 0;
+            left: 50%;
+            margin: 5px auto;
+            font-size: 16px;
+            color: #515151;
+        }
+        #copyright >a{
+            text-decoration: none;
+            color: #77C;
+        }
+        .number{
+            position: absolute;
+            top:0;
+            left:0;
+            border-top:22px solid #08a1ef;
+            border-right: 22px solid transparent;
+        }
+        .pagenum{
+            font-size: 12px;
+            color: #fff;
+            position: absolute;
+            top: -23px;
+            left: 2px;
+        }
+            #navBar::-webkit-scrollbar{
+            width: 8px;
+            background-color: #f5f5f5;
+        }
+            #navBar::-webkit-scrollbar-track{
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            border-radius: 8px;
+            background-color: #fff;
+        }
+            #navBar::-webkit-scrollbar-thumb{
+            border-radius: 8px;
+            -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+            background-color: #6b6b70;
+        }
+        #navBar::-webkit-scrollbar-thumb:hover{
+            background-color: #4a4a4f;
+        }
+</style>
+  </head>
+  <body>
+    <div id="main-area">
+      <div id="content-info">
+        <div id="content-info">
+          <div id="title">Voice control-EN</div>
+        </div>
+        <div id="author-info">
+          <div id="author-name" class="text">yongge</div>
+          <div id="share-time" class="text">2024-06-19</div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="svg-container"><svg ed:name="页面-1" xmlns="http://www.w3.org/2000/svg" ed:hSpacing="30" ed:vSpacing="30" height="3326" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:ed="https://www.edrawsoft.cn/xml/2017/SVGExtensions/" viewBox="0 0 875 3326" preserveAspectRadio="xMinYMin meet" width="875" id="page0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style type="text/css"><![CDATA[
+g[ed\:togtopicid],g[ed\:hyperlink],g[ed\:comment],g[ed\:note] {cursor:pointer;}
+g[id] {-moz-user-select: none;-ms-user-select: none;user-select: none;}
+svg text::selection,svg tspan::selection{background-color: #4285f4;color: #ffffff;fill: #ffffff;}
+.st7 {fill:#009a49;font-family:微软雅黑;font-size:10pt;font-weight:bold}
+.st3 {fill:#00b050;font-family:微软雅黑;font-size:14pt;font-weight:bold}
+.st9 {fill:#7cc38e;font-family:微软雅黑;font-size:10pt;font-weight:bold}
+.st5 {fill:#cbe3d1;font-family:微软雅黑;font-size:14pt;font-weight:bold}
+.st6 {fill:#f96628;font-family:微软雅黑;font-size:10pt;font-weight:bold}
+.st10 {fill:#ff0000;font-family:微软雅黑;font-size:10pt}
+.st12 {fill:#ff0000;font-family:微软雅黑;font-size:11.5pt;font-weight:bold}
+.st13 {fill:#ff0000;font-family:微软雅黑;font-size:8.7pt;font-weight:bold}
+.st17 {fill:#ff0000}
+.st8 {fill:#ffc000;font-family:微软雅黑;font-size:10pt;font-weight:bold}
+.st15 {fill:#ffc000;font-family:微软雅黑;font-size:10pt}
+.st2 {fill:#ffc000;font-weight:bold}
+.st16 {fill:#ffff00;font-family:微软雅黑;font-size:18pt}
+.st1 {fill:#ffffff;font-family:微软雅黑;font-size:18pt}
+.st4 {fill:#ffffff;font-family:微软雅黑;font-size:20pt;font-weight:bold}
+.st14 {font-size:10pt}
+.st11 {font-weight:bold}
+]]></style>
+    <defs/>
+    <rect height="3326" fill="#ffffff" width="875" x="0" y="0"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,2.6,5.9,2.6L5.9,18.6C5.9,18.6,6.9,20.9,12,20.9C6.9,21,5.9,23.2,5.9,23.2L5.9,39.2C5.9,39.2,5.8,41.8,0,41.8" stroke="#00af54" fill="none" ed:parentid="102" ed:type="summary" transform="matrix(1,0,0,1,278.8,455.64)" ed:idlist="102" id="219"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,2.6,5.9,2.6L5.9,18.6C5.9,18.6,6.9,20.9,12,20.9C6.9,21,5.9,23.2,5.9,23.2L5.9,39.2C5.9,39.2,5.8,41.8,0,41.8" stroke="#00af54" fill="none" ed:parentid="104" ed:type="summary" transform="matrix(1,0,0,1,270.8,530.44)" ed:idlist="104" id="221"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,2.6,5.9,2.6L5.9,18.6C5.9,18.6,6.9,20.9,12,20.9C6.9,21,5.9,23.2,5.9,23.2L5.9,39.2C5.9,39.2,5.8,41.8,0,41.8" stroke="#00af54" fill="none" ed:parentid="109" ed:type="summary" transform="matrix(1,0,0,1,245.2,754.84)" ed:idlist="109" id="225"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,12.1,5.9,12.1L5.9,85.4C5.9,85.4,6.9,95.7,12,95.7C6.9,96.1,5.9,106,5.9,106L5.9,179.3C5.9,179.3,5.8,191.4,0,191.4" stroke="#00af54" fill="none" ed:parentid="203,201,243" ed:type="summary" transform="matrix(1,0,0,1,215.6,979.24)" ed:idlist="203,201,243" id="245"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,7.4,5.9,7.4L5.9,52C5.9,52,6.9,58.3,12,58.3C6.9,58.6,5.9,64.6,5.9,64.6L5.9,109.2C5.9,109.2,5.8,116.6,0,116.6" stroke="#00af54" fill="none" ed:parentid="106,251" ed:type="summary" transform="matrix(1,0,0,1,312.4,605.24)" ed:idlist="106,251" id="253"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,7.4,5.9,7.4L5.9,52C5.9,52,6.9,58.3,12,58.3C6.9,58.6,5.9,64.6,5.9,64.6L5.9,109.2C5.9,109.2,5.8,116.6,0,116.6" stroke="#00af54" fill="none" ed:parentid="111,255" ed:type="summary" transform="matrix(1,0,0,1,308.4,829.64)" ed:idlist="111,255" id="257"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,12.1,5.9,12.1L5.9,85.4C5.9,85.4,6.9,95.7,12,95.7C6.9,96.1,5.9,106,5.9,106L5.9,179.3C5.9,179.3,5.8,191.4,0,191.4" stroke="#00af54" fill="none" ed:parentid="113,115,117" ed:type="summary" transform="matrix(1,0,0,1,250.8,1203.64)" ed:idlist="113,115,117" id="259"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,12.1,5.9,12.1L5.9,85.4C5.9,85.4,6.9,95.7,12,95.7C6.9,96.1,5.9,106,5.9,106L5.9,179.3C5.9,179.3,5.8,191.4,0,191.4" stroke="#00af54" fill="none" ed:parentid="119,121,130" ed:type="summary" transform="matrix(1,0,0,1,250,1428.04)" ed:idlist="119,121,130" id="261"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,12.1,5.9,12.1L5.9,85.4C5.9,85.4,6.9,95.7,12,95.7C6.9,96.1,5.9,106,5.9,106L5.9,179.3C5.9,179.3,5.8,191.4,0,191.4" stroke="#00af54" fill="none" ed:parentid="134,136,138" ed:type="summary" transform="matrix(1,0,0,1,246,1652.44)" ed:idlist="134,136,138" id="263"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,12.1,5.9,12.1L5.9,85.4C5.9,85.4,6.9,95.7,12,95.7C6.9,96.1,5.9,106,5.9,106L5.9,179.3C5.9,179.3,5.8,191.4,0,191.4" stroke="#00af54" fill="none" ed:parentid="140,146,148" ed:type="summary" transform="matrix(1,0,0,1,261.2,1876.84)" ed:idlist="140,146,148" id="265"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,31,5.9,31L5.9,218.8C5.9,218.8,6.9,245.3,12,245.3C6.9,246.4,5.9,271.8,5.9,271.8L5.9,459.6C5.9,459.6,5.8,490.6,0,490.6" stroke="#00af54" fill="none" ed:parentid="156,192,194,205,207,209,211" ed:type="summary" transform="matrix(1,0,0,1,293.2,2807.94)" ed:idlist="156,192,194,205,207,209,211" id="279"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,3.7,5.9,3.7L5.9,26.4C5.9,26.4,6.9,29.6,12,29.6C6.9,29.7,5.9,32.8,5.9,32.8L5.9,55.4C5.9,55.4,5.8,59.1,0,59.1" stroke="#00af54" fill="none" ed:parentid="158,162" ed:type="summary" transform="matrix(1,0,0,1,211.7,2152.79)" ed:idlist="158,162" id="267"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,3.7,5.9,3.7L5.9,26.4C5.9,26.4,6.9,29.6,12,29.6C6.9,29.7,5.9,32.8,5.9,32.8L5.9,55.4C5.9,55.4,5.8,59.1,0,59.1" stroke="#00af54" fill="none" ed:parentid="164,166" ed:type="summary" transform="matrix(1,0,0,1,222.1,2221.69)" ed:idlist="164,166" id="269"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,5.9,5.9,5.9L5.9,41.7C5.9,41.7,6.9,46.8,12,46.8C6.9,47,5.9,51.9,5.9,51.9L5.9,87.7C5.9,87.7,5.8,93.6,0,93.6" stroke="#00af54" fill="none" ed:parentid="168,170,172" ed:type="summary" transform="matrix(1,0,0,1,241.3,2365.39)" ed:idlist="168,170,172" id="271"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,5.9,5.9,5.9L5.9,41.7C5.9,41.7,6.9,46.8,12,46.8C6.9,47,5.9,51.9,5.9,51.9L5.9,87.7C5.9,87.7,5.8,93.6,0,93.6" stroke="#00af54" fill="none" ed:parentid="174,180,182" ed:type="summary" transform="matrix(1,0,0,1,261.3,2468.74)" ed:idlist="174,180,182" id="273"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,3.7,5.9,3.7L5.9,26.4C5.9,26.4,6.9,29.6,12,29.6C6.9,29.7,5.9,32.8,5.9,32.8L5.9,55.4C5.9,55.4,5.8,59.1,0,59.1" stroke="#00af54" fill="none" ed:parentid="184,186" ed:type="summary" transform="matrix(1,0,0,1,211.7,2646.89)" ed:idlist="184,186" id="275"/>
+    <path stroke-linejoin="round" stroke-width="2" d="M0.1,0C6,0,5.9,3.7,5.9,3.7L5.9,26.4C5.9,26.4,6.9,29.6,12,29.6C6.9,29.7,5.9,32.8,5.9,32.8L5.9,55.4C5.9,55.4,5.8,59.1,0,59.1" stroke="#00af54" fill="none" ed:parentid="188,190" ed:type="summary" transform="matrix(1,0,0,1,222.1,2715.79)" ed:idlist="188,190" id="277"/>
+    <g ed:parentid="101" ed:tosuperid="102" transform="matrix(1,0,0,1,83.2,449.59)" id="103">
+        <path d="M-25.2,-27L-25.2,26.9L25.2,26.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-27L-25.2,26.9L18.3,26.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,23.5L25.2,26.9L18.3,30.4L18.3,23.5" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="104" transform="matrix(1,0,0,1,83.2,486.99)" id="105">
+        <path d="M-25.2,-64.3L-25.2,64.4L25.2,64.4" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-64.3L-25.2,64.4L18.3,64.4" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,60.9L25.2,64.4L18.3,67.8L18.3,60.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="106" transform="matrix(1,0,0,1,83.2,524.39)" id="107">
+        <path d="M-25.2,-101.8L-25.2,101.7L25.2,101.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-101.8L-25.2,101.7L18.3,101.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,98.3L25.2,101.7L18.3,105.2L18.3,98.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="109" transform="matrix(1,0,0,1,83.2,599.19)" id="110">
+        <path d="M-25.2,-176.5L-25.2,176.5L25.2,176.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-176.5L-25.2,176.5L18.3,176.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,173.1L25.2,176.5L18.3,180L18.3,173.1" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="111" transform="matrix(1,0,0,1,83.2,636.59)" id="112">
+        <path d="M-25.2,-213.9L-25.2,213.9L25.2,213.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-213.9L-25.2,213.9L18.3,213.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,210.5L25.2,213.9L18.3,217.4L18.3,210.5" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="113" transform="matrix(1,0,0,1,83.2,823.59)" id="114">
+        <path d="M-25.2,-400.9L-25.2,400.9L25.2,400.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-400.9L-25.2,400.9L18.3,400.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,397.5L25.2,400.9L18.3,404.4L18.3,397.5" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="115" transform="matrix(1,0,0,1,83.2,860.99)" id="116">
+        <path d="M-25.2,-438.3L-25.2,438.3L25.2,438.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-438.3L-25.2,438.3L18.3,438.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,434.9L25.2,438.3L18.3,441.8L18.3,434.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="117" transform="matrix(1,0,0,1,83.2,898.39)" id="118">
+        <path d="M-25.2,-475.7L-25.2,475.7L25.2,475.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-475.7L-25.2,475.7L18.3,475.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,472.3L25.2,475.7L18.3,479.2L18.3,472.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="119" transform="matrix(1,0,0,1,83.2,935.79)" id="120">
+        <path d="M-25.2,-513.1L-25.2,513.1L25.2,513.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-513.1L-25.2,513.1L18.3,513.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,509.7L25.2,513.1L18.3,516.6L18.3,509.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="121" transform="matrix(1,0,0,1,83.2,973.19)" id="122">
+        <path d="M-25.2,-550.5L-25.2,550.5L25.2,550.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-550.5L-25.2,550.5L18.3,550.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,547.1L25.2,550.5L18.3,554L18.3,547.1" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="130" transform="matrix(1,0,0,1,83.2,1010.59)" id="131">
+        <path d="M-25.2,-587.9L-25.2,587.9L25.2,587.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-587.9L-25.2,587.9L18.3,587.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,584.5L25.2,587.9L18.3,591.4L18.3,584.5" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="134" transform="matrix(1,0,0,1,83.2,1047.99)" id="135">
+        <path d="M-25.2,-625.3L-25.2,625.3L25.2,625.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-625.3L-25.2,625.3L18.3,625.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,621.9L25.2,625.3L18.3,628.8L18.3,621.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="136" transform="matrix(1,0,0,1,83.2,1085.39)" id="137">
+        <path d="M-25.2,-662.7L-25.2,662.7L25.2,662.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-662.7L-25.2,662.7L18.3,662.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,659.3L25.2,662.7L18.3,666.2L18.3,659.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="138" transform="matrix(1,0,0,1,83.2,1122.79)" id="139">
+        <path d="M-25.2,-700.1L-25.2,700.1L25.2,700.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-700.1L-25.2,700.1L18.3,700.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,696.7L25.2,700.1L18.3,703.6L18.3,696.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="140" transform="matrix(1,0,0,1,83.2,1160.19)" id="141">
+        <path d="M-25.2,-737.5L-25.2,737.5L25.2,737.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-737.5L-25.2,737.5L18.3,737.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,734.1L25.2,737.5L18.3,741L18.3,734.1" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="146" transform="matrix(1,0,0,1,83.2,1197.59)" id="147">
+        <path d="M-25.2,-774.9L-25.2,774.9L25.2,774.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-774.9L-25.2,774.9L18.3,774.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,771.5L25.2,774.9L18.3,778.4L18.3,771.5" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="148" transform="matrix(1,0,0,1,83.2,1234.99)" id="149">
+        <path d="M-25.2,-812.3L-25.2,812.3L25.2,812.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-812.3L-25.2,812.3L18.3,812.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,808.9L25.2,812.3L18.3,815.8L18.3,808.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="150" transform="matrix(1,0,0,1,83.2,1272.39)" id="151">
+        <path d="M-25.2,-849.8L-25.2,849.8L25.2,849.8" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-849.8L-25.2,849.8L18.3,849.8" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,846.3L25.2,849.8L18.3,853.2L18.3,846.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="152" transform="matrix(1,0,0,1,83.2,1378.69)" id="153">
+        <path d="M-25.2,-956L-25.2,956L25.2,956" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-956L-25.2,956L18.3,956" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,952.6L25.2,956L18.3,959.5L18.3,952.6" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="154" transform="matrix(1,0,0,1,83.2,1519.44)" id="155">
+        <path d="M-25.2,-1096.8L-25.2,1096.8L25.2,1096.8" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1096.8L-25.2,1096.8L18.3,1096.8" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1093.3L25.2,1096.8L18.3,1100.3L18.3,1093.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="156" transform="matrix(1,0,0,1,83.2,1625.74)" id="157">
+        <path d="M-25.2,-1203.1L-25.2,1203.1L25.2,1203.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1203.1L-25.2,1203.1L18.3,1203.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1199.6L25.2,1203.1L18.3,1206.6L18.3,1199.6" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="150" ed:tosuperid="158" transform="matrix(1,0,0,1,152.85,2160.26)" id="159">
+        <path d="M-9.5,-17.2L-9.5,17.2L9.4,17.2" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-17.2L-9.5,17.2L5.4,17.2" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,15.2L9.4,17.2L5.4,19.2L5.4,15.2" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="150" ed:tosuperid="162" transform="matrix(1,0,0,1,152.85,2177.49)" id="163">
+        <path d="M-9.5,-34.4L-9.5,34.4L9.4,34.4" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-34.4L-9.5,34.4L5.4,34.4" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,32.4L9.4,34.4L5.4,36.4L5.4,32.4" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="150" ed:tosuperid="164" transform="matrix(1,0,0,1,152.85,2194.71)" id="165">
+        <path d="M-9.5,-51.7L-9.5,51.7L9.4,51.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-51.7L-9.5,51.7L5.4,51.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,49.7L9.4,51.7L5.4,53.7L5.4,49.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="150" ed:tosuperid="166" transform="matrix(1,0,0,1,152.85,2211.94)" id="167">
+        <path d="M-9.5,-68.9L-9.5,68.9L9.4,68.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-68.9L-9.5,68.9L5.4,68.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,66.9L9.4,68.9L5.4,70.9L5.4,66.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="168" transform="matrix(1,0,0,1,152.85,2372.86)" id="169">
+        <path d="M-9.5,-17.2L-9.5,17.2L9.4,17.2" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-17.2L-9.5,17.2L5.4,17.2" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,15.2L9.4,17.2L5.4,19.2L5.4,15.2" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="170" transform="matrix(1,0,0,1,152.85,2390.09)" id="171">
+        <path d="M-9.5,-34.4L-9.5,34.4L9.4,34.4" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-34.4L-9.5,34.4L5.4,34.4" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,32.4L9.4,34.4L5.4,36.4L5.4,32.4" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="172" transform="matrix(1,0,0,1,152.85,2407.31)" id="173">
+        <path d="M-9.5,-51.7L-9.5,51.7L9.4,51.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-51.7L-9.5,51.7L5.4,51.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,49.7L9.4,51.7L5.4,53.7L5.4,49.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="174" transform="matrix(1,0,0,1,152.85,2424.54)" id="175">
+        <path d="M-9.5,-68.9L-9.5,68.9L9.4,68.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-68.9L-9.5,68.9L5.4,68.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,66.9L9.4,68.9L5.4,70.9L5.4,66.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="180" transform="matrix(1,0,0,1,152.85,2441.76)" id="181">
+        <path d="M-9.5,-86.1L-9.5,86.1L9.4,86.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-86.1L-9.5,86.1L5.4,86.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,84.1L9.4,86.1L5.4,88.1L5.4,84.1" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="152" ed:tosuperid="182" transform="matrix(1,0,0,1,152.85,2458.99)" id="183">
+        <path d="M-9.5,-103.3L-9.5,103.3L9.4,103.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-103.3L-9.5,103.3L5.4,103.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,101.3L9.4,103.3L5.4,105.3L5.4,101.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="154" ed:tosuperid="184" transform="matrix(1,0,0,1,152.85,2654.36)" id="185">
+        <path d="M-9.5,-17.2L-9.5,17.2L9.4,17.2" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-17.2L-9.5,17.2L5.4,17.2" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,15.2L9.4,17.2L5.4,19.2L5.4,15.2" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="154" ed:tosuperid="186" transform="matrix(1,0,0,1,152.85,2671.59)" id="187">
+        <path d="M-9.5,-34.4L-9.5,34.4L9.4,34.4" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-34.4L-9.5,34.4L5.4,34.4" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,32.4L9.4,34.4L5.4,36.4L5.4,32.4" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="154" ed:tosuperid="188" transform="matrix(1,0,0,1,152.85,2688.81)" id="189">
+        <path d="M-9.5,-51.7L-9.5,51.7L9.4,51.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-51.7L-9.5,51.7L5.4,51.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,49.7L9.4,51.7L5.4,53.7L5.4,49.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="154" ed:tosuperid="190" transform="matrix(1,0,0,1,152.85,2706.04)" id="191">
+        <path d="M-9.5,-68.9L-9.5,68.9L9.4,68.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-linecap="round" d="M-9.5,-68.9L-9.5,68.9L5.4,68.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M5.4,66.9L9.4,68.9L5.4,70.9L5.4,66.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="192" transform="matrix(1,0,0,1,83.2,1663.14)" id="193">
+        <path d="M-25.2,-1240.5L-25.2,1240.5L25.2,1240.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1240.5L-25.2,1240.5L18.3,1240.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1237L25.2,1240.5L18.3,1244L18.3,1237" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="194" transform="matrix(1,0,0,1,83.2,1700.54)" id="195">
+        <path d="M-25.2,-1277.9L-25.2,1277.9L25.2,1277.9" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1277.9L-25.2,1277.9L18.3,1277.9" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1274.4L25.2,1277.9L18.3,1281.4L18.3,1274.4" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="201" transform="matrix(1,0,0,1,83.2,748.79)" id="202">
+        <path d="M-25.2,-326.1L-25.2,326.1L25.2,326.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-326.1L-25.2,326.1L18.3,326.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,322.7L25.2,326.1L18.3,329.6L18.3,322.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="203" transform="matrix(1,0,0,1,83.2,711.39)" id="204">
+        <path d="M-25.2,-288.7L-25.2,288.7L25.2,288.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-288.7L-25.2,288.7L18.3,288.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,285.3L25.2,288.7L18.3,292.2L18.3,285.3" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="205" transform="matrix(1,0,0,1,83.2,1737.94)" id="206">
+        <path d="M-25.2,-1315.3L-25.2,1315.3L25.2,1315.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1315.3L-25.2,1315.3L18.3,1315.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1311.8L25.2,1315.3L18.3,1318.8L18.3,1311.8" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="207" transform="matrix(1,0,0,1,83.2,1775.34)" id="208">
+        <path d="M-25.2,-1352.7L-25.2,1352.7L25.2,1352.7" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1352.7L-25.2,1352.7L18.3,1352.7" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1349.2L25.2,1352.7L18.3,1356.2L18.3,1349.2" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="209" transform="matrix(1,0,0,1,83.2,1812.74)" id="210">
+        <path d="M-25.2,-1390.1L-25.2,1390.1L25.2,1390.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1390.1L-25.2,1390.1L18.3,1390.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1386.6L25.2,1390.1L18.3,1393.6L18.3,1386.6" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="211" transform="matrix(1,0,0,1,83.2,1850.14)" id="212">
+        <path d="M-25.2,-1427.5L-25.2,1427.5L25.2,1427.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-1427.5L-25.2,1427.5L18.3,1427.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,1424L25.2,1427.5L18.3,1431L18.3,1424" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="243" transform="matrix(1,0,0,1,83.2,786.19)" id="244">
+        <path d="M-25.2,-363.5L-25.2,363.5L25.2,363.5" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-363.5L-25.2,363.5L18.3,363.5" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,360.1L25.2,363.5L18.3,367L18.3,360.1" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="251" transform="matrix(1,0,0,1,83.2,561.79)" id="252">
+        <path d="M-25.2,-139.1L-25.2,139.1L25.2,139.1" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-139.1L-25.2,139.1L18.3,139.1" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,135.7L25.2,139.1L18.3,142.6L18.3,135.7" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:parentid="101" ed:tosuperid="255" transform="matrix(1,0,0,1,83.2,673.99)" id="256">
+        <path d="M-25.2,-251.3L-25.2,251.3L25.2,251.3" fill="none"/>
+        <path stroke-linejoin="round" stroke-width="3" stroke-linecap="round" d="M-25.2,-251.3L-25.2,251.3L18.3,251.3" stroke="#00b050" fill="none"/>
+        <path stroke-width="1" stroke-linecap="round" d="M18.3,247.9L25.2,251.3L18.3,254.8L18.3,247.9" stroke="#00b050" fill="#00b050"/>
+    </g>
+    <g ed:layout="righttree" ed:topictype="mainidea" ed:height="64" transform="matrix(1,0,0,1,23,358.64)" ed:width="510.4" id="101">
+        <path stroke-linejoin="round" stroke-width="3" d="M4,0L506.4,0C509.1,0,510.4,1.3,510.4,4L510.4,60C510.4,62.7,509.1,64,506.4,64L4,64C1.3,64,0,62.7,0,60L0,4C0,1.3,1.3,0,4,0z" stroke="#00af54" fill="#00af54"/>
+        <text class="st1">
+            <tspan style="white-space:pre" textLength="313" x="22" y="41.65">Voice wake-up language   "</tspan>
+            <tspan style="white-space:pre" textLength="141" x="337.3" class="st2">Hello Radio</tspan>
+            <tspan style="white-space:pre" textLength="10" x="478.3">"</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,455.64)" ed:width="165.4" id="102">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L161.4,0C164.1,0,165.4,1.3,165.4,4L165.4,37.8C165.4,40.5,164.1,41.8,161.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="130" x="19" y="28.55">System Menu</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,530.44)" ed:width="157.4" id="104">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L153.4,0C156.1,0,157.4,1.3,157.4,4L157.4,37.8C157.4,40.5,156.1,41.8,153.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="123" x="19" y="28.55">Model Menu</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,605.24)" ed:width="195.8" id="106">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L191.8,0C194.5,0,195.8,1.3,195.8,4L195.8,37.8C195.8,40.5,194.5,41.8,191.8,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="161" x="19" y="28.55">Channel Monitor</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:topictype="floating" ed:height="87.40000000000001" transform="matrix(1,0,0,1,22.87,20)" ed:width="535" id="108">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L531,0C533.7,0,535,1.3,535,4L535,83.4C535,86.1,533.7,87.4,531,87.4L4,87.4C1.3,87.4,0,86.1,0,83.4L0,4C0,1.3,1.3,0,4,0z" stroke="#00af54" fill="#00af54"/>
+        <text class="st4">
+            <tspan style="white-space:pre" textLength="502" x="19" y="36.55">Voice control operation process and </tspan>
+            <tspan style="white-space:pre" textLength="161" x="19" y="71.75">instructions</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,754.84)" ed:width="131.8" id="109">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L127.8,0C130.5,0,131.8,1.3,131.8,4L131.8,37.8C131.8,40.5,130.5,41.8,127.8,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="97" x="19" y="28.55">Telemetry</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,829.64)" ed:width="188.0695648193359" id="111">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L184.1,0C186.8,0,188.1,1.3,188.1,4L188.1,37.8C188.1,40.5,186.8,41.8,184.1,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="126" x="19" y="28.55">Sensor status</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1203.64)" ed:width="137.4" id="113">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L133.4,0C136.1,0,137.4,1.3,137.4,4L137.4,37.8C137.4,40.5,136.1,41.8,133.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="103" x="19" y="28.55">Open Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1278.44)" ed:width="137.4" id="115">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L133.4,0C136.1,0,137.4,1.3,137.4,4L137.4,37.8C137.4,40.5,136.1,41.8,133.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="103" x="19" y="28.55">Open Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1353.24)" ed:width="137.4" id="117">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L133.4,0C136.1,0,137.4,1.3,137.4,4L137.4,37.8C137.4,40.5,136.1,41.8,133.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="103" x="19" y="28.55">Open Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1428.04)" ed:width="136.6" id="119">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L132.6,0C135.3,0,136.6,1.3,136.6,4L136.6,37.8C136.6,40.5,135.3,41.8,132.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="102" x="19" y="28.55">Close Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1502.84)" ed:width="136.6" id="121">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L132.6,0C135.3,0,136.6,1.3,136.6,4L136.6,37.8C136.6,40.5,135.3,41.8,132.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="102" x="19" y="28.55">Close Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1577.64)" ed:width="136.6" id="130">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L132.6,0C135.3,0,136.6,1.3,136.6,4L136.6,37.8C136.6,40.5,135.3,41.8,132.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="102" x="19" y="28.55">Close Gear</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1652.44)" ed:width="129.4" id="134">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L125.4,0C128.1,0,129.4,1.3,129.4,4L129.4,37.8C129.4,40.5,128.1,41.8,125.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="96" x="19" y="28.55">Open flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1727.24)" ed:width="129.4" id="136">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L125.4,0C128.1,0,129.4,1.3,129.4,4L129.4,37.8C129.4,40.5,128.1,41.8,125.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="96" x="19" y="28.55">Open flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1802.04)" ed:width="132.6" id="138">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L128.6,0C131.3,0,132.6,1.3,132.6,4L132.6,37.8C132.6,40.5,131.3,41.8,128.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="99" x="19" y="28.55">Open Flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1876.84)" ed:width="128.6" id="140">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L124.6,0C127.3,0,128.6,1.3,128.6,4L128.6,37.8C128.6,40.5,127.3,41.8,124.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="95" x="19" y="28.55">Close flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1951.64)" ed:width="128.6" id="146">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L124.6,0C127.3,0,128.6,1.3,128.6,4L128.6,37.8C128.6,40.5,127.3,41.8,124.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="95" x="19" y="28.55">Close flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2026.44)" ed:width="147.8" id="148">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L143.8,0C146.5,0,147.8,1.3,147.8,4L147.8,37.8C147.8,40.5,146.5,41.8,143.8,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="115" x="19" y="28.55">Deploy Flap</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2101.24)" ed:width="217.4" id="150">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L213.4,0C216.1,0,217.4,1.3,217.4,4L217.4,37.8C217.4,40.5,216.1,41.8,213.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="184" x="19" y="28.55">Aileron adjustment</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2313.84)" ed:width="197.4" id="152">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L193.4,0C196.1,0,197.4,1.3,197.4,4L197.4,37.8C197.4,40.5,196.1,41.8,193.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="163" x="19" y="28.55">Pitch adjustment</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2595.34)" ed:width="231" id="154">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L227,0C229.7,0,231,1.3,231,4L231,37.8C231,40.5,229.7,41.8,227,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="198" x="19" y="28.55">Rotating adjustment</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2807.94)" ed:width="95" id="156">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L91,0C93.7,0,95,1.3,95,4L95,37.8C95,40.5,93.7,41.8,91,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="56" x="19" y="28.55">Photo</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="150" transform="matrix(1,0,0,1,162.3,2152.79)" ed:width="44.4" id="158">
+        <path d="M0,0L44.4,0L44.4,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L44.4,24.7" stroke="#00b050" fill="none"/>
+        <text class="st6">
+            <tspan style="white-space:pre" textLength="25" x="9" y="17.1">Left</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="150" transform="matrix(1,0,0,1,162.3,2187.24)" ed:width="44.4" id="162">
+        <path d="M0,0L44.4,0L44.4,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L44.4,24.7" stroke="#00b050" fill="none"/>
+        <text class="st6">
+            <tspan style="white-space:pre" textLength="25" x="9" y="17.1">Left</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="150" transform="matrix(1,0,0,1,162.3,2221.69)" ed:width="54.8" id="164">
+        <path d="M0,0L54.8,0L54.8,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L54.8,24.7" stroke="#00b050" fill="none"/>
+        <text class="st7">
+            <tspan style="white-space:pre" textLength="35" x="9" y="17.1">Right</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="150" transform="matrix(1,0,0,1,162.3,2256.14)" ed:width="54.8" id="166">
+        <path d="M0,0L54.8,0L54.8,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L54.8,24.7" stroke="#00b050" fill="none"/>
+        <text class="st7">
+            <tspan style="white-space:pre" textLength="35" x="9" y="17.1">Right</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2365.39)" ed:width="74" id="168">
+        <path d="M0,0L74,0L74,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L74,24.7" stroke="#00b050" fill="none"/>
+        <text class="st8">
+            <tspan style="white-space:pre" textLength="54" x="9" y="17.1">pitch up</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2399.84)" ed:width="74" id="170">
+        <path d="M0,0L74,0L74,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L74,24.7" stroke="#00b050" fill="none"/>
+        <text class="st8">
+            <tspan style="white-space:pre" textLength="54" x="9" y="17.1">pitch up</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2434.29)" ed:width="74" id="172">
+        <path d="M0,0L74,0L74,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L74,24.7" stroke="#00b050" fill="none"/>
+        <text class="st8">
+            <tspan style="white-space:pre" textLength="54" x="9" y="17.1">pitch up</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2468.74)" ed:width="94" id="174">
+        <path d="M0,0L94,0L94,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L94,24.7" stroke="#00b050" fill="none"/>
+        <text class="st9">
+            <tspan style="white-space:pre" textLength="74" x="9" y="17.1">pitch down</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2503.19)" ed:width="94" id="180">
+        <path d="M0,0L94,0L94,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L94,24.7" stroke="#00b050" fill="none"/>
+        <text class="st9">
+            <tspan style="white-space:pre" textLength="74" x="9" y="17.1">pitch down</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="152" transform="matrix(1,0,0,1,162.3,2537.64)" ed:width="94" id="182">
+        <path d="M0,0L94,0L94,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L94,24.7" stroke="#00b050" fill="none"/>
+        <text class="st9">
+            <tspan style="white-space:pre" textLength="74" x="9" y="17.1">pitch down</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="154" transform="matrix(1,0,0,1,162.3,2646.89)" ed:width="44.4" id="184">
+        <path d="M0,0L44.4,0L44.4,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L44.4,24.7" stroke="#00b050" fill="none"/>
+        <text class="st6">
+            <tspan style="white-space:pre" textLength="25" x="9" y="17.1">Left</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="154" transform="matrix(1,0,0,1,162.3,2681.34)" ed:width="44.4" id="186">
+        <path d="M0,0L44.4,0L44.4,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L44.4,24.7" stroke="#00b050" fill="none"/>
+        <text class="st6">
+            <tspan style="white-space:pre" textLength="25" x="9" y="17.1">Left</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="154" transform="matrix(1,0,0,1,162.3,2715.79)" ed:width="54.8" id="188">
+        <path d="M0,0L54.8,0L54.8,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L54.8,24.7" stroke="#00b050" fill="none"/>
+        <text class="st7">
+            <tspan style="white-space:pre" textLength="35" x="9" y="17.1">Right</tspan>
+        </text>
+    </g>
+    <g ed:height="24.7" ed:parentid="154" transform="matrix(1,0,0,1,162.3,2750.24)" ed:width="54.8" id="190">
+        <path d="M0,0L54.8,0L54.8,24.7L0,24.7L0,0z" fill="#ffffff"/>
+        <path stroke-linejoin="round" d="M0,24.7L54.8,24.7" stroke="#00b050" fill="none"/>
+        <text class="st7">
+            <tspan style="white-space:pre" textLength="35" x="9" y="17.1">Right</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2882.74)" ed:width="179.8" id="192">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L175.8,0C178.5,0,179.8,1.3,179.8,4L179.8,37.8C179.8,40.5,178.5,41.8,175.8,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="145" x="19" y="28.55">Start recording</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,2957.54)" ed:width="168.6" id="194">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L164.6,0C167.3,0,168.6,1.3,168.6,4L168.6,37.8C168.6,40.5,167.3,41.8,164.6,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="135" x="19" y="28.55">End recording</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1054.04)" ed:width="102.2" id="201">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L98.2,0C100.9,0,102.2,1.3,102.2,4L102.2,37.8C102.2,40.5,100.9,41.8,98.2,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="64" x="19" y="28.55">Return</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,979.24)" ed:width="99" id="203">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L95,0C97.7,0,99,1.3,99,4L99,37.8C99,40.5,97.7,41.8,95,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="63" x="19" y="28.55">Cancel</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,3032.34)" ed:width="121.4" id="205">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L117.4,0C120.1,0,121.4,1.3,121.4,4L121.4,37.8C121.4,40.5,120.1,41.8,117.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="85" x="19" y="28.55">go home</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,3107.14)" ed:width="145.4" id="207">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L141.4,0C144.1,0,145.4,1.3,145.4,4L145.4,37.8C145.4,40.5,144.1,41.8,141.4,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="108" x="19" y="28.55">GPS Return</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,3181.94)" ed:width="135" id="209">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L131,0C133.7,0,135,1.3,135,4L135,37.8C135,40.5,133.7,41.8,131,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="99" x="19" y="28.55">hi take off</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,3256.74)" ed:width="102.2" id="211">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L98.2,0C100.9,0,102.2,1.3,102.2,4L102.2,37.8C102.2,40.5,100.9,41.8,98.2,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st5">
+            <tspan style="white-space:pre" textLength="66" x="19" y="28.55">hi land</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="219" transform="matrix(1,0,0,1,299.8,461.44)" ed:width="224.104" id="220">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L209,0C217.3,0,224.1,6.8,224.1,15.1C224.1,23.4,217.3,30.2,209,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="190" x="14" y="19.95" class="st11">Pop up system settings page</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="221" transform="matrix(1,0,0,1,291.8,536.24)" ed:width="219.304" id="222">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L204.2,0C212.5,0,219.3,6.8,219.3,15.1C219.3,23.4,212.5,30.2,204.2,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="188" x="14" y="19.95" class="st11">Pop up model settings page</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="225" transform="matrix(1,0,0,1,266.2,760.64)" ed:width="270.504" id="226">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L255.4,0C263.7,0,270.5,6.8,270.5,15.1C270.5,23.4,263.7,30.2,255.4,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="237" x="14" y="19.95" class="st11">Pop up telemetry information page</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,1128.84)" ed:width="79.8" id="243">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L75.8,0C78.5,0,79.8,1.3,79.8,4L79.8,37.8C79.8,40.5,78.5,41.8,75.8,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="42" x="19" y="28.55">Quit</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="245" transform="matrix(1,0,0,1,236.6,1059.84)" ed:width="521.7040000000001" id="246">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L506.6,0C514.9,0,521.7,6.8,521.7,15.1C521.7,23.4,514.9,30.2,506.6,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="482" x="14" y="19.95" class="st11">The exit command for the above page is similar to pressing the RTN key</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,680.04)" ed:width="199" id="251">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L195,0C197.7,0,199,1.3,199,4L199,37.8C199,40.5,197.7,41.8,195,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="167" x="19" y="28.55">Channel Message</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="253" transform="matrix(1,0,0,1,333.4,648.44)" ed:width="231.304" id="254">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L216.2,0C224.5,0,231.3,6.8,231.3,15.1C231.3,23.4,224.5,30.2,216.2,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="199" x="14" y="19.95" class="st11">Pop up channel monitor page</tspan>
+        </text>
+    </g>
+    <g ed:height="41.8" ed:parentid="101" transform="matrix(1,0,0,1,108.4,904.44)" ed:width="195" id="255">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L191,0C193.7,0,195,1.3,195,4L195,37.8C195,40.5,193.7,41.8,191,41.8L4,41.8C1.3,41.8,0,40.5,0,37.8L0,4C0,1.3,1.3,0,4,0z" stroke="#00b050" fill="#ffffff"/>
+        <text class="st3">
+            <tspan style="white-space:pre" textLength="161" x="19" y="28.55">Sensor messsage</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="31.8" ed:parentid="257" transform="matrix(1,0,0,1,329.4,872.04)" ed:width="277.256" id="258">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.9,0L261.4,0C270.1,0,277.3,7.1,277.3,15.9C277.3,24.7,270.1,31.8,261.4,31.8L15.9,31.8C7.1,31.8,0,24.7,0,15.9C0,7.1,7.1,0,15.9,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st12">
+            <tspan style="white-space:pre" textLength="243" x="15" y="21.55">Pop up sensor information page</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="259" transform="matrix(1,0,0,1,271.8,1284.24)" ed:width="249.704" id="260">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L234.6,0C242.9,0,249.7,6.8,249.7,15.1C249.7,23.4,242.9,30.2,234.6,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="214" x="14" y="19.95" class="st11">Landing gear extension function</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="261" transform="matrix(1,0,0,1,271,1508.64)" ed:width="250.504" id="262">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L235.4,0C243.7,0,250.5,6.8,250.5,15.1C250.5,23.4,243.7,30.2,235.4,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="216" x="14" y="19.95" class="st11">Landing gear retraction function</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="49.40000000000001" ed:parentid="263" transform="matrix(1,0,0,1,267,1723.44)" ed:width="538.7280000000001" id="264">
+        <path stroke-linejoin="round" stroke-width="2" d="M24.7,0L514,0C527.7,0,538.7,11.1,538.7,24.7C538.7,38.3,527.7,49.4,514,49.4L24.7,49.4C11.1,49.4,0,38.3,0,24.7C0,11.1,11.1,0,24.7,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="449" x="21" y="19.95" class="st11">Flap release function, voice release of flaps one segment at a time, </tspan>
+            <tspan style="white-space:pre" textLength="177" x="21" y="39.15" class="st11">divided into two segments</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="265" transform="matrix(1,0,0,1,282.2,1957.44)" ed:width="189.704" id="266">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L174.6,0C182.9,0,189.7,6.8,189.7,15.1C189.7,23.4,182.9,30.2,174.6,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="156" x="14" y="19.95" class="st11">Flap retraction function</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="49.40000000000001" ed:parentid="267" transform="matrix(1,0,0,1,232.7,2157.66)" ed:width="538.7280000000001" id="268">
+        <path stroke-linejoin="round" stroke-width="2" d="M24.7,0L514,0C527.7,0,538.7,11.1,538.7,24.7C538.7,38.3,527.7,49.4,514,49.4L24.7,49.4C11.1,49.4,0,38.3,0,24.7C0,11.1,11.1,0,24.7,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="488" x="21" y="19.95" class="st11">Adjust the aileron to the left by one grid, and adjust the aircraft's aileron </tspan>
+            <tspan style="white-space:pre" textLength="65" x="21" y="39.15" class="st11">to the left</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="49.40000000000001" ed:parentid="269" transform="matrix(1,0,0,1,243.1,2226.56)" ed:width="538.7280000000001" id="270">
+        <path stroke-linejoin="round" stroke-width="2" d="M24.7,0L514,0C527.7,0,538.7,11.1,538.7,24.7C538.7,38.3,527.7,49.4,514,49.4L24.7,49.4C11.1,49.4,0,38.3,0,24.7C0,11.1,11.1,0,24.7,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st10">
+            <tspan style="white-space:pre" textLength="447" x="21" y="19.95" class="st11">Adjust the aileron to the right by one grid, and adjust the aircraft's </tspan>
+            <tspan style="white-space:pre" textLength="126" x="21" y="39.15" class="st11">aileron to the right</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="271" transform="matrix(1,0,0,1,262.3,2397.09)" ed:width="462.504" id="272">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L447.4,0C455.7,0,462.5,6.8,462.5,15.1C462.5,23.4,455.7,30.2,447.4,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st13">
+            <tspan style="white-space:pre" textLength="425" x="14" y="19.95" class="st14">Adjust the elevator up by one grid, and the aircraft will head up</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="273" transform="matrix(1,0,0,1,282.3,2500.44)" ed:width="502.504" id="274">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L487.4,0C495.7,0,502.5,6.8,502.5,15.1C502.5,23.4,495.7,30.2,487.4,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st13">
+            <tspan style="white-space:pre" textLength="465" x="14" y="19.95" class="st14">Adjust the elevator down by one grid, and the aircraft will head down</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="275" transform="matrix(1,0,0,1,232.7,2661.36)" ed:width="505.7040000000001" id="276">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L490.6,0C498.9,0,505.7,6.8,505.7,15.1C505.7,23.4,498.9,30.2,490.6,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st13">
+            <tspan style="white-space:pre" textLength="465" x="14" y="19.95" class="st14">Adjust the rudder to the left by one grid, and the aircraft will yaw left </tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="30.2" ed:parentid="277" transform="matrix(1,0,0,1,243.1,2730.26)" ed:width="520.904" id="278">
+        <path stroke-linejoin="round" stroke-width="2" d="M15.1,0L505.8,0C514.1,0,520.9,6.8,520.9,15.1C520.9,23.4,514.1,30.2,505.8,30.2L15.1,30.2C6.8,30.2,0,23.4,0,15.1C0,6.8,6.8,0,15.1,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st13">
+            <tspan style="white-space:pre" textLength="481" x="14" y="19.95" class="st14">Adjust the rudder to the right by one grid, and the aircraft will yaw right</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:height="49.40000000000001" ed:parentid="279" transform="matrix(1,0,0,1,314.2,3028.54)" ed:width="538.7280000000001" id="280">
+        <path stroke-linejoin="round" stroke-width="2" d="M24.7,0L514,0C527.7,0,538.7,11.1,538.7,24.7C538.7,38.3,527.7,49.4,514,49.4L24.7,49.4C11.1,49.4,0,38.3,0,24.7C0,11.1,11.1,0,24.7,0z" stroke="#00af54" fill="#ffffff"/>
+        <text class="st15">
+            <tspan style="white-space:pre" textLength="469" x="21" y="19.95" class="st11">Set corresponding channel output control instructions, please wait for </tspan>
+            <tspan style="white-space:pre" textLength="245" x="21" y="39.15" class="st11">software updates and improvements</tspan>
+        </text>
+    </g>
+    <g ed:layout="rightmap" ed:topictype="floating" ed:height="235.4" transform="matrix(1,0,0,1,22.87,117.44)" ed:width="535" id="281">
+        <path stroke-linejoin="round" stroke-width="2" d="M4,0L531,0C533.7,0,535,1.3,535,4L535,231.4C535,234.1,533.7,235.4,531,235.4L4,235.4C1.3,235.4,0,234.1,0,231.4L0,4C0,1.3,1.3,0,4,0z" stroke="#00af54" fill="#00af54"/>
+        <text class="st16">
+            <tspan style="white-space:pre" textLength="467" x="19" y="33.35">Attention: It is necessary to wake up the </tspan>
+            <tspan style="white-space:pre" textLength="10" x="19" y="64.55">"</tspan>
+            <tspan style="white-space:pre" textLength="132" x="29.8" class="st17">Hello Radio</tspan>
+            <tspan style="white-space:pre" textLength="334" x="163.8">" voice before responding to </tspan>
+            <tspan style="white-space:pre" textLength="417" x="19" y="95.75">subsequent control commands. The </tspan>
+            <tspan style="white-space:pre" textLength="455" x="19" y="126.95">timeout after waking up is 8 seconds. If </tspan>
+            <tspan style="white-space:pre" textLength="482" x="19" y="158.15">there is no valid voice within 8 seconds, it </tspan>
+            <tspan style="white-space:pre" textLength="434" x="19" y="189.35">will enter sleep mode and need to be </tspan>
+            <tspan style="white-space:pre" textLength="185" x="19" y="220.55">awakened again</tspan>
+        </text>
+    </g>
+</svg>
+</div>
+        <div id="copyright">Created With 思维导图</div>
+      </div>
+    </div>
+    <script/>
+  </body>
+</html>
