@@ -1,9 +1,9 @@
 semver: 2.11.3
 header: 
-   name: "Atlas"
+   name: "Chimera"
    modelId: 
       0:
-         val: 1
+         val: 2
 telemetryProtocol: 0
 thrTrim: 0
 noGlobalFunctions: 0
@@ -484,156 +484,6 @@ telemetrySensors:
          custom: 
             ratio: 0
             offset: 0
-   10:
-      id1: 
-         id: 30
-      id2: 
-         instance: 0
-      label: "Ptch"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   11:
-      id1: 
-         id: 30
-      id2: 
-         instance: 1
-      label: "Roll"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   12:
-      id1: 
-         id: 30
-      id2: 
-         instance: 2
-      label: "Yaw"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 21
-      prec: 2
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   13:
-      id1: 
-         id: 8
-      id2: 
-         instance: 0
-      label: "RxBt"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 1
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   14:
-      id1: 
-         id: 8
-      id2: 
-         instance: 1
-      label: "Curr"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 2
-      prec: 1
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   15:
-      id1: 
-         id: 8
-      id2: 
-         instance: 2
-      label: "Capa"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 14
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   16:
-      id1: 
-         id: 8
-      id2: 
-         instance: 3
-      label: "Bat"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 13
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         custom: 
-            ratio: 0
-            offset: 0
-   17:
-      id1: 
-         id: 33
-      id2: 
-         instance: 0
-      label: "FM"
-      subId: 0
-      type: TYPE_CUSTOM
-      unit: 42
-      prec: 0
-      autoOffset: 0
-      filter: 0
-      logs: 1
-      persistent: 0
-      onlyPositive: 0
-      cfg: 
-         param: 0
 screens: 
    0:
       type: VALUES
